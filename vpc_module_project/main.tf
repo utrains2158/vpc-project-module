@@ -115,6 +115,6 @@ resource "aws_subnet" "private_data_subnet_az2" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "$${var.project_name}-${var.enviromnent}-private-data-az2"
+    Name = "${var.project_name}-${var.enviromnent}-private-data-az2"
   }
 }

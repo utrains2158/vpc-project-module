@@ -22,7 +22,7 @@ module "vpc-project-samka" {
 
 # create natgateway(the values are from vpc-module output)
 module "natgateway-project-samka" {
-  source                     = "../vpc_module_project/nat-gateway"
+  source                     = "../vpc_project/nat-gateway"
   public_subnet_az1_id       = module.vpc-project-samka.public_subnet_az1_id
   public_subnet_az2_id       = module.vpc-project-samka.public_subnet_az2_id
   internet-gateway           = module.vpc-project-samka.internet-gateway
