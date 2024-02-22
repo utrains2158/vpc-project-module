@@ -5,6 +5,6 @@ terraform {
     key     = "vpc_project-prod"
     region  = "us-east-1"
     profile = "default"
-    #dynamodb_table = 
+    ##dynamodb_table = 
   }
 }
