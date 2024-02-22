@@ -1,9 +1,9 @@
 # store the terraform state file in s3 and lock with dynamodb
 terraform {
   backend "s3" {
-    bucket  = "samka-source-bucket"
+    bucket  = "${var.project_name}-${var.enviromnent}-bucket"
     key     = "vpc_project"
-    region  = "us-east-1"
+    region  = var.aws_region
     profile = "default"
     #dynamodb_table = 
   }
