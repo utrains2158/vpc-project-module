@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket  = "samka-source-bucket"
-    key     = "vpc_project-dev"
+    key     = "vpc_project-prod"
     region  = "us-east-1"
     profile = "default"
     #dynamodb_table = 
